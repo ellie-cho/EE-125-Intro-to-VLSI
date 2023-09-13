@@ -1,0 +1,53 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.math_real.all;
+
+entity galois_lsfr is
+  generic (
+      F_CLK: natural := 1; -- frequency of the clock in Hertz
+      F_CLK_PRE: natural := 50_000_000); -- frequency of the predefined board clock 
+  port (
+      clk, rst: in std_logic;
+      outp: out std_logic_vector(1 downto 0));
+end entity;
+
+architecture dataflow of galois_lsfr is
+  constant CLK_MAX: natural := F_CLK_PRE/(F_CLK*2); 
+  constant CLK_BITS: natural := integer(ceil(log2(real(CLK_MAX+1)))); 
+  signal clk_slow: std_logic;
+  signal digit: std_logic_vector(7 downto 0);
+  
+begin
+    process(clk, rst, clk_slow)  
+    variable count: unsigned(CLK_BITS - 1 downto 0); 
+    begin
+        if rising_edge(clk) then
+            count := count + 1;
+            if count = CLK_MAX then
+                count := (others => '0');
+                clk_slow <= not clk_slow;
+            end if;
+        end if;
+        if rising_edge(clk_slow) then
+            digit(7) <= digit(0);
+            digit(6) <= digit(7);
+            digit(5) <= digit(6) xor digit(0);
+            digit(4) <= digit(5) xor digit(0);
+            digit(3) <= digit(4) xor digit(0);
+            digit(2) <= digit(3);
+            digit(1) <= digit(2);
+            digit(0) <= digit(1);
+        end if; 
+        if rst = '1' then 
+            digit <= "10101010";
+            count := (others => '0');
+            clk_slow <= '0';
+        end if; 
+        if clk_slow = '1' then 
+            outp <= (digit(0), not digit(0)); 
+        else 
+            outp <= "00"; 
+        end if; 
+    end process;
+end architecture;

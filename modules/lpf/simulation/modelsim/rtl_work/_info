@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.0/my_designs/lpf/simulation/modelsim
+vlpf
+Z1 !s110 1689791118
+!i10b 1
+!s100 l5BB<GzeSk=^4`ZWTJ:<<3
+IM4=3el;MiFR9lI59[f3dC3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1689790808
+8C:/intelFPGA_lite/18.0/my_designs/lpf/lpf.v
+FC:/intelFPGA_lite/18.0/my_designs/lpf/lpf.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1689791118.000000
+!s107 C:/intelFPGA_lite/18.0/my_designs/lpf/lpf.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/my_designs/lpf|C:/intelFPGA_lite/18.0/my_designs/lpf/lpf.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.0/my_designs/lpf
+Z7 tCvgOpt 0
+vtestbench
+R1
+!i10b 1
+!s100 j9S2DDmPQN7dQg9l6RD]51
+IWd`m<eShVm`MZjS5hNBMT1
+R2
+R0
+w1689790913
+8C:/intelFPGA_lite/18.0/my_designs/lpf/testbench.v
+FC:/intelFPGA_lite/18.0/my_designs/lpf/testbench.v
+L0 5
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.0/my_designs/lpf/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/my_designs/lpf|C:/intelFPGA_lite/18.0/my_designs/lpf/testbench.v|
+!i113 1
+R5
+R6
+R7

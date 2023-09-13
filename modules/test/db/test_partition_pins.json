@@ -1,0 +1,145 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "sum[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[8]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[9]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[10]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[11]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[12]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[13]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[14]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[15]",
+					"strict" : false
+				},
+				{
+					"name" : "input_reg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "input_reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "input_reg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "input_reg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "input_reg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "input_reg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "input_reg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "input_reg[7]",
+					"strict" : false
+				},
+				{
+					"name" : "input_reg[8]",
+					"strict" : false
+				},
+				{
+					"name" : "input_reg[9]",
+					"strict" : false
+				},
+				{
+					"name" : "input_reg[10]",
+					"strict" : false
+				},
+				{
+					"name" : "input_reg[11]",
+					"strict" : false
+				},
+				{
+					"name" : "input_reg[12]",
+					"strict" : false
+				},
+				{
+					"name" : "input_reg[13]",
+					"strict" : false
+				},
+				{
+					"name" : "input_reg[14]",
+					"strict" : false
+				},
+				{
+					"name" : "input_reg[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

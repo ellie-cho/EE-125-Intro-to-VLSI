@@ -1,0 +1,80 @@
+
+/* File        : lpf.v
+ * Description : Low Pass Filter module for the WMS demodulation of WISTLS.
+ *               The following FPGA module implements a single-pole IIR 
+ *               low pass filter. The constants of the IIR filter a[] and 
+ *               b[] are determined by the MATLAB filter design script called 
+ *               "".m in the Sphinx repo. To change the order, pass-band, 
+ *              
+ * Inputs:  clk         -- The built-in clock of the FPGA (45 MHz)
+ *          reset       -- System reset of the low pass filter
+ *          enable      -- Active high enable of the low pass filter
+ *          input_data  -- Data to be filtered by the low pass filter
+ * Outputs: filtered_output -- Filtered data outputted by the low pass filter
+ * 
+ *
+ * Author      : Seunghee (Ellie) Cho
+ *
+ * Target      : ProASIC3E die: A3PE3000, package: 484 FBGA
+ *
+ *
+ */
+
+
+
+module lpf(
+  input clk, 
+  reset,
+  input [15:0] input_data,
+  input enable,
+  output reg [15:0] filtered_output, delay_line_0
+);
+
+  // Filter coefficients
+  parameter integer N = 1;  // Filter order
+  parameter integer M = 32;  // Number of bits for filter coefficients
+  wire [M-1:0] b [0:N];  // Feedforward coefficients
+  wire [M-1:0] a [0:N];  // Feedback coefficients
+
+  // Internal signals
+  reg [15:0] input_delay_line [0:N];  // Input Delay line
+  reg [15:0] output_delay_line [0:N]; // Output Delay line
+  reg [15:0] sum_out;
+
+  // Initialize filter coefficients
+  
+    // TODO: Assign appropriate values to filter coefficients based on desired filter response
+    // For example, if you want a low-pass filter with a cutoff frequency of 1kHz and a ripple of 0.1dB,
+    // you can design the filter using tools like MATLAB or Octave and then assign the calculated coefficients here.
+
+  assign b[0] = 32'H079E;   
+
+  assign b[1] = 32'H079E;
+  assign a[1] = 32'b1110100000101011; 
+  assign a[0] = 1;  
+
+  // Filter operation
+  always @(posedge clk or posedge reset) begin
+    if (reset) begin
+      // Reset filter state
+      input_delay_line[0] = 16'b0;
+      output_delay_line[0] = 16'b0;
+      input_delay_line[1] = 16'b0;
+      output_delay_line[1] = 16'b0;
+    end else if (enable) begin
+      // Shift values in delay line
+
+      input_delay_line[1] = input_delay_line[0];
+      output_delay_line[1] = output_delay_line[0];
+		
+      // Update input sample
+      input_delay_line[0] = input_data;
+      // Perform filter operation
+      sum_out = (input_data * b[0]) + (input_delay_line[1] * b[1]) - (output_delay_line[1] * a[1]);
+      // Output filtered data
+      filtered_output = sum_out;
+      output_delay_line[0] = sum_out;
+      delay_line_0 = input_data;
+    end
+  end
+endmodule

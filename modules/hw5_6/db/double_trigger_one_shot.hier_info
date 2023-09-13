@@ -1,0 +1,15 @@
+|double_trigger_one_shot
+clk => pr_state[0].CLK
+clk => pr_state[1].CLK
+x1 => process_0.IN0
+x1 => process_0.IN0
+x1 => Mux1.IN3
+x1 => process_0.IN0
+x1 => process_0.IN0
+x2 => process_0.IN1
+x2 => process_0.IN1
+x2 => process_0.IN1
+x2 => process_0.IN1
+y << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

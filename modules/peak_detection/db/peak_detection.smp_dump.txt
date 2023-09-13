@@ -1,0 +1,6 @@
+
+State Machine - |peak_detection|stateMoore_reg
+Name stateMoore_reg.increasing stateMoore_reg.10 stateMoore_reg.peak 
+stateMoore_reg.10 0 0 0 
+stateMoore_reg.peak 0 1 1 
+stateMoore_reg.increasing 1 1 0 

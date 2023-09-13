@@ -1,0 +1,13 @@
+module phase_to_amplitude  
+	#(parameter N = 4)
+	 (input		clk,
+	 input reg  phase, 			
+	 output reg [N:0]	amplitude);
+
+	reg x,y,z;
+	always @ (posedge clk) begin
+		begin
+			amplitude <= 
+		end
+	end
+endmodule

@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.0/my_designs/hw5_5/simulation/qsim
+Essd_fun
+Z1 w1685238776
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 PDz30Zoj;e1JEj1l7dCiT1
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 O_kVZAFaN7XDl67flUT[n1
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 ;`SHL]^j4UaADA9ENAN^]0
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 Dg`GWTC`^Q8GNSMPeo22;3
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 DPx6 altera 28 altera_primitives_components 0 22 _LNC5n6B?5VN@W;M4Dg@k1
+R0
+Z11 8ssd_fun.vho
+Z12 Fssd_fun.vho
+l0
+L38
+VeHOK0a9V5e?8b9KIjoNMP1
+!s100 :Bm24ekK[W:C1@YeQXEFR3
+Z13 OV;C;10.5b;63
+32
+Z14 !s110 1685238776
+!i10b 1
+Z15 !s108 1685238776.000000
+Z16 !s90 -work|work|ssd_fun.vho|
+Z17 !s107 ssd_fun.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 7 ssd_fun 0 22 eHOK0a9V5e?8b9KIjoNMP1
+l303
+L64
+V3g@i0Z0Pl_RJR^OTXZ0C33
+!s100 T?=6`3EQSA4BQA@Q45[hU2
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Essd_fun_vhd_vec_tst
+Z20 w1685238773
+R8
+R9
+R0
+Z21 8Waveform.vwf.vht
+Z22 FWaveform.vwf.vht
+l0
+L31
+V:hoOmIVcJBPYHZ0?Q?mQz3
+!s100 g1@N8n[GEc[KXX5FOgOQP1
+R13
+32
+R14
+!i10b 1
+R15
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
+!i113 1
+R18
+R19
+Assd_fun_arch
+R8
+R9
+Z25 DEx4 work 19 ssd_fun_vhd_vec_tst 0 22 :hoOmIVcJBPYHZ0?Q?mQz3
+l52
+L33
+V87mO2gY6TzbVFH_z32=>a1
+!s100 RaPzUe<eAf88ahocW?f`S3
+R13
+32
+R14
+!i10b 1
+R15
+R23
+R24
+!i113 1
+R18
+R19

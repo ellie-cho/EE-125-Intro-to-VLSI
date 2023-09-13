@@ -1,0 +1,18 @@
+|pwm
+clk => clk_slow.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+rst => process_1.IN1
+duty[0] => LessThan0.IN6
+duty[0] => Add1.IN6
+duty[0] => Equal2.IN2
+duty[1] => LessThan0.IN5
+duty[1] => Add1.IN5
+duty[1] => Equal2.IN1
+duty[2] => LessThan0.IN4
+duty[2] => Add1.IN4
+duty[2] => Equal2.IN0
+pwm_out <= pwm_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

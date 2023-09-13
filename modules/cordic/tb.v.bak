@@ -1,0 +1,17 @@
+module tb;
+	reg clk, sine, cosine;
+	wire A;
+	// Start the clock
+	always #10 clk = ~clk; //50 MHz clock
+	// Assign variables
+	assign A = 1;
+	
+	// Instantiate cordic design
+	
+	cordic c0 (.clk(clk),
+					.A (A),
+				   .sine (sine),
+					.cosine (cosine));
+					
+					
+endmodule

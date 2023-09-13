@@ -1,0 +1,210 @@
+# do lpf.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:41:00 on Jul 19,2023
+# vlog -work work lpf.vo 
+# -- Compiling module lpf
+# 
+# Top level modules:
+# 	lpf
+# End time: 13:41:01 on Jul 19,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:41:01 on Jul 19,2023
+# vlog -work work Waveform1.vwf.vt 
+# -- Compiling module lpf_vlg_vec_tst
+# 
+# Top level modules:
+# 	lpf_vlg_vec_tst
+# End time: 13:41:01 on Jul 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.lpf_vlg_vec_tst 
+# Start time: 13:41:01 on Jul 19,2023
+# Loading work.lpf_vlg_vec_tst
+# Loading work.lpf
+# Loading cyclonev_ver.cyclonev_io_obuf
+# Loading cyclonev_ver.cyclonev_io_ibuf
+# Loading cyclonev_ver.cyclonev_clkena
+# Loading cyclonev_ver.cyclonev_mac
+# Loading altera_ver.dffeas
+# Loading cyclonev_ver.cyclonev_lcell_comb
+# ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2272): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4326).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'bx').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'bx').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'bx').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'bx').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'bx').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'bx').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'bx').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'bx').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2272): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4329).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2272): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4330).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2272): [PCDPC] - Port size (16) does not match connection size (27) for port 'scanin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4332).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2272): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4333).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2355): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2355): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2355): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2355): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2355): [PCDPC] - Port size (16) does not match connection size (27) for port 'ay'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4325).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2355): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4326).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2355): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4329).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2355): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4330).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2355): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4333).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: (vsim-3016) lpf.vo(2475): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2475): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2475): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2475): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2475): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2475): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2475): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4326).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2475): [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4328).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2475): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4329).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2475): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4330).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2475): [PCDPC] - Port size (16) does not match connection size (27) for port 'scanin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4332).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2475): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4333).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2556): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2556): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2556): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2556): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2556): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2556): [PCDPC] - Port size (16) does not match connection size (27) for port 'ay'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4325).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2556): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4326).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2556): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4329).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2556): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4330).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2556): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4333).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2638): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2638): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2638): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2638): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2638): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2638): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2638): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4326).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2638): [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4328).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2638): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4329).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2638): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4330).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2638): [PCDPC] - Port size (17) does not match connection size (27) for port 'scanin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4332).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2638): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4333).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) <protected>(<protected>): [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+#    Time: 0 ps  Iteration: 0  Protected: /lpf_vlg_vec_tst/i1/\Mult3~8 /inst/<protected> File: nofile
+# ** Warning: (vsim-3015) <protected>(<protected>): [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+#    Time: 0 ps  Iteration: 0  Protected: /lpf_vlg_vec_tst/i1/\Mult3~8 /inst/<protected> File: nofile
+# ** Warning: (vsim-3016) lpf.vo(2716): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult1~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2716): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4326).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult1~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2716): [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4328).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult1~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2716): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4329).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult1~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2716): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4330).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult1~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2716): [PCDPC] - Port size (17) does not match connection size (27) for port 'scanin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4332).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult1~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2716): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4333).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult1~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) <protected>(<protected>): [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+#    Time: 0 ps  Iteration: 0  Protected: /lpf_vlg_vec_tst/i1/\Mult1~8 /inst/<protected> File: nofile
+# ** Warning: (vsim-3015) <protected>(<protected>): [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+#    Time: 0 ps  Iteration: 0  Protected: /lpf_vlg_vec_tst/i1/\Mult1~8 /inst/<protected> File: nofile
+# ** Warning: (vsim-3016) lpf.vo(2794): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2794): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2794): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3016) lpf.vo(2794): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2794): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4326).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2794): [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4328).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2794): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4329).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2794): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4330).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2794): [PCDPC] - Port size (17) does not match connection size (27) for port 'scanin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4332).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) lpf.vo(2794): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4333).
+#    Time: 0 ps  Iteration: 0  Instance: /lpf_vlg_vec_tst/i1/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+# ** Warning: (vsim-3015) <protected>(<protected>): [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+#    Time: 0 ps  Iteration: 0  Protected: /lpf_vlg_vec_tst/i1/\Mult0~8 /inst/<protected> File: nofile
+# ** Warning: (vsim-3015) <protected>(<protected>): [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+#    Time: 0 ps  Iteration: 0  Protected: /lpf_vlg_vec_tst/i1/\Mult0~8 /inst/<protected> File: nofile
+# after#29
+# ** Note: $finish    : Waveform1.vwf.vt(52)
+#    Time: 1 us  Iteration: 0  Instance: /lpf_vlg_vec_tst
+# End time: 13:41:01 on Jul 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 87

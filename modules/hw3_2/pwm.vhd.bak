@@ -1,0 +1,43 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity pwm_module is
+  generic (
+    f_CLK : natural := 50_000_000; -- Clock frequency in Hz
+    f_PWM   : natural := 10_000_000;      -- PWM frequency in Hz
+  );
+  port (
+    clk     : in  std_logic;
+    rst     : in  std_logic;
+	 duty		: in  std_logic(3 downto 0);
+    pwm_out : out std_logic
+  );
+end entity;
+
+architecture behavioral of pwm_module is
+  signal counter  : natural range 0 to f_CLK / f_PWM - 1;
+  signal pwm_tick : std_logic;
+begin
+  process (clk, rst)
+  begin
+    if rst = '1' then
+      counter <= 0;
+      pwm_out <= '0';
+    elsif rising_edge(clk) then
+      if counter = 0 then
+        pwm_tick <= '1';
+        counter  <= f_CLK / f_PWM - 1;
+      else
+        pwm_tick <= '0';
+        counter  <= counter - 1;
+      end if;
+
+      if pwm_tick = '1' and counter < (f_CLK / f_PWM) * to_integer(unsigned(duty)) then
+        pwm_out <= '1';
+      else
+        pwm_out <= '0';
+      end if;
+    end if;
+  end process;
+end architecture;

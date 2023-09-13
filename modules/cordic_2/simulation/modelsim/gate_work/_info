@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.0/my_designs/cordic_2/simulation/modelsim
+vphase_to_amplitude
+!s110 1688580300
+!i10b 1
+!s100 Y_PVOKB7__b2`jn9oZizl1
+Iz_H;?580NlGR2ES6J`:3^1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1688580288
+8phase_to_amplitude.vo
+Fphase_to_amplitude.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1688580300.000000
+!s107 phase_to_amplitude.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|phase_to_amplitude.vo|
+!i113 1
+Z3 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+Z4 tCvgOpt 0
+vtb
+!s110 1688580301
+!i10b 1
+!s100 EOW^NUa]BgQZa2VK`hh5n3
+IQCUk_c_4VcWo?Hk?9l`J^1
+R1
+R0
+w1688580140
+8C:/intelFPGA_lite/18.0/my_designs/cordic_2/tb.v
+FC:/intelFPGA_lite/18.0/my_designs/cordic_2/tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1688580301.000000
+!s107 C:/intelFPGA_lite/18.0/my_designs/cordic_2/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/my_designs/cordic_2|C:/intelFPGA_lite/18.0/my_designs/cordic_2/tb.v|
+!i113 1
+R3
+!s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.0/my_designs/cordic_2
+R4

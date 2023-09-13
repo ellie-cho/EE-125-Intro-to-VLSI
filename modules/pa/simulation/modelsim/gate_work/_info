@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.0/my_designs/pa/simulation/modelsim
+vpa
+Z1 !s110 1688679193
+!i10b 1
+!s100 M[WeemifLd4NMbm:OlYa72
+IaW<^LRPh=^8b93gV>L1<b0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1688679187
+8pa.vo
+Fpa.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1688679193.000000
+!s107 pa.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|pa.vo|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+Z6 tCvgOpt 0
+vtb
+R1
+!i10b 1
+!s100 lQ4P]KQ1@>7D:lD<F_ziS3
+I[dzV7O3mHf]zGPF]ZY8@j1
+R2
+R0
+w1688679120
+8C:/intelFPGA_lite/18.0/my_designs/pa/tb.v
+FC:/intelFPGA_lite/18.0/my_designs/pa/tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.0/my_designs/pa/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/my_designs/pa|C:/intelFPGA_lite/18.0/my_designs/pa/tb.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.0/my_designs/pa
+R6

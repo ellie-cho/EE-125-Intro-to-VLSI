@@ -1,0 +1,34 @@
+|vga_1
+clk => clk_vga.CLK
+R_switch => R.DATAB
+R_switch => Selector0.IN5
+R_switch => R.DATAA
+R_switch => Selector0.IN0
+G_switch => G.DATAB
+G_switch => Selector1.IN5
+G_switch => G.DATAA
+G_switch => Selector1.IN0
+B_switch => B.DATAB
+B_switch => Selector2.IN5
+B_switch => B.DATAA
+B_switch => Selector2.IN0
+Hsync <= Hsyn.DB_MAX_OUTPUT_PORT_TYPE
+Vsync <= Vsyn.DB_MAX_OUTPUT_PORT_TYPE
+R[0] <= R.DB_MAX_OUTPUT_PORT_TYPE
+R[1] <= R.DB_MAX_OUTPUT_PORT_TYPE
+R[2] <= R.DB_MAX_OUTPUT_PORT_TYPE
+R[3] <= R.DB_MAX_OUTPUT_PORT_TYPE
+G[0] <= G.DB_MAX_OUTPUT_PORT_TYPE
+G[1] <= G.DB_MAX_OUTPUT_PORT_TYPE
+G[2] <= G.DB_MAX_OUTPUT_PORT_TYPE
+G[3] <= G.DB_MAX_OUTPUT_PORT_TYPE
+B[0] <= B.DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= B.DB_MAX_OUTPUT_PORT_TYPE
+B[2] <= B.DB_MAX_OUTPUT_PORT_TYPE
+B[3] <= B.DB_MAX_OUTPUT_PORT_TYPE
+BLANKn <= <VCC>
+SYNCn <= <GND>
+sw[0] => ~NO_FANOUT~
+sw[1] => ~NO_FANOUT~
+
+

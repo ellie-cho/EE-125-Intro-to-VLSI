@@ -1,0 +1,15 @@
+module phase_accumulator
+	#(parameter N = 31)
+	(input		clk,
+					rstn,
+	 output reg [N:0]	phase);
+	localparam FCW = 1;
+
+	always @ (posedge clk) begin
+		if (!rstn)
+			phase <= 0;
+		else begin
+			phase <= phase + FCW;
+		end
+	end
+endmodule

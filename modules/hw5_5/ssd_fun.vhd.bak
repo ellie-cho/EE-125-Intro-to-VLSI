@@ -1,0 +1,240 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+ 
+entity ssd_fun is
+   generic(
+       F_CLK: natural := 50_000_000  -- clock frequency in Hz
+       );
+   port(
+       clk, rst, start_btn, dir_btn, speed_btn: in std_logic;
+       ssd: out std_logic_vector(6 downto 0);
+end entity;
+ 
+architecture fsm of ssd_fun is
+	constant T2: std_logic_vector(7 downto 0) := "11001000";
+	type ssd_state_type is (one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen);
+	type run_state_type is (start, stop);
+	type dir_state_type is (cw, ccw);
+	type speed_state_type is (200, 140, 100, 70);
+	signal pr_state, nx_state: ssd_state_type;
+	signal pr_run_state, nx_run_state: run_state_type;
+	signal pr_dir_state, nx_dir_state: dir_state_type;
+	signal pr_speed_state, nx_speed_state: speed_state_type;
+	signal T1: std_logic_vector(7 downto 0);
+	signal start: std_logic;
+	signal direction : std_logic;  -- '1' for clockwise, '0' for counter-clockwise
+	signal t: std_logic_vector(7 downto 0);
+	
+    begin
+       
+ 
+       -- register for all states
+       process(clk, rst)
+           begin
+               if (rising_edge(rst)) then
+                   pr_run_state <= start;
+						 pr_state <= one;
+						 pr_dir_state <= cw;
+						 pr_speed_state <= 200;
+						 t <= 0;
+               elsif rising_edge(clk) then
+						if (pr_state /= nx_state) then
+							t <= 0;
+						else 
+							t <= t+1;
+						end if;
+                   pr_run_state <= nx_run_state;
+						 pr_state <= nx_state;
+						 pr_dir_state <= nx_dir_state;
+						 pr_speed_state <= nx_speed_state;
+						 
+               end if;
+       end process;  
+		 
+		 
+		 
+		 
+		 
+		 
+		 -- start/stop state logic
+       process(start_btn)
+           begin
+					if (rising_edge(start_btn) then
+						case pr_run_state is
+							when  start =>
+							  nx_run_state <= stop;
+							when others =>
+							  nx_run_state <= start;
+						end case;
+					end if;
+       end process; 
+		 
+		 
+		 -- cw/ccw state logic
+       process(dir_btn)
+           begin
+					if (rising_edge(dir_btn) then
+						case pr_dir_state is
+							when cw =>
+							  nx_dir_state <= ccw;
+							when others =>
+							  nx_dir_state <= cw;
+						end case;
+					end if;
+       end process; 
+		 
+		 
+		 -- speed state logic
+       process(speed_btn)
+           begin
+					if (rising_edge(speed_btn) then
+						case pr_speed_state is
+							when 200 =>
+							  nx_speed_state <= 140;
+							when 140 =>
+								nx_speed_state <= 100;
+							when 100 => 
+								nx_speed_state <= 70;
+							when others =>
+							  nx_speed_state <= 200;
+						end case;
+					end if;
+       end process; 
+		 
+		 
+		 -- ssd state logic
+       process(all)
+           begin
+					case pr_state is
+						when one =>
+							if pr_run_state = start then
+								if pr_dir_state = ccw then
+									if t >= T1 then
+										nx_state = two;
+									else
+										nx_state = one;
+									end if;
+								else
+									if t >= T1 then 
+										nx_state = fourteen;
+									else
+										nx_state = one;
+								end if;
+							else
+								nx_state <= one;
+							end if;
+						when two =>
+							if pr_run_state = start then
+								if pr_dir_state = ccw then
+									if t >= T1 then
+										nx_state = three;
+									else
+										nx_state = two;
+									end if;
+								else
+									if t >= T1 then 
+										nx_state = one;
+									else
+										nx_state = two;
+								end if;
+							else
+								nx_state <= two;
+							end if;
+						when three =>
+							if pr_run_state = start then
+								if pr_dir_state = ccw then
+									if t >= T1 then
+										nx_state = four;
+									else
+										nx_state = three;
+									end if;
+								else
+									if t >= T1 then 
+										nx_state = two;
+									else
+										nx_state = three;
+								end if;
+							else
+								nx_state <= three;
+							end if;
+						when four =>
+							if pr_run_state = start then
+								if pr_dir_state = ccw then
+									if t >= T1 then
+										nx_state = five;
+									else
+										nx_state = four;
+									end if;
+								else
+									if t >= T1 then 
+										nx_state = three;
+									else
+										nx_state = four;
+								end if;
+							else
+								nx_state <= four;
+							end if;
+						when five =>
+							if pr_run_state = start then
+								if pr_dir_state = ccw then
+									if t >= T1 then
+										nx_state = six;
+									else
+										nx_state = five;
+									end if;
+								else
+									if t >= T1 then 
+										nx_state = four;
+									else
+										nx_state = five;
+								end if;
+							else
+								nx_state <= five;
+							end if;
+						when six =>
+							if pr_run_state = start then
+								if pr_dir_state = ccw then
+									if t >= T1 then
+										nx_state = seven;
+									else
+										nx_state = six;
+									end if;
+								else
+									if t >= T1 then 
+										nx_state = five;
+									else
+										nx_state = six;
+								end if;
+							else
+								nx_state <= six;
+							end if;
+						when seven =>
+							if pr_run_state = start then
+								if pr_dir_state = ccw then
+									if t >= T1 then
+										nx_state = eight;
+									else
+										nx_state = seven;
+									end if;
+								else
+									if t >= T1 then 
+										nx_state = six;
+									else
+										nx_state = seven;
+								end if;
+							else
+								nx_state <= seven;
+							end if;
+						when eight =>
+						when nine =>
+						when ten =>
+						when eleven =>
+						when twelve =>
+						when thirteen =>
+						when fourteen =>
+						when others =>
+       end process; 
+      
+  
+       end process;

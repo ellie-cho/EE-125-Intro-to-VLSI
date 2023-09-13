@@ -1,0 +1,261 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cyclonev
+Quartus root          :  c:/intelfpga_lite/18.0/quartus/bin64/
+Quartus sim root      :  c:/intelfpga_lite/18.0/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  verilog
+Simulation Mode       :  GUI
+Sim Output File       :  lpf.vo
+Sim SDF file          :  lpf__verilog.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script c:/intelfpga_lite/18.0/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File lpf_run_msim_gate_verilog.do already exists - backing up current file as lpf_run_msim_gate_verilog.do.bak11
+Probing transcript
+ModelSim-Altera Info: # Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
+ModelSim-Altera Info: # ERROR: No extended dataflow license exists
+ModelSim-Altera Info: # do lpf_run_msim_gate_verilog.do
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+ModelSim-Altera Info: # vmap work gate_work 
+ModelSim-Altera Info: # Copying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+. {lpf.vo}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+ModelSim-Altera Info: # Start time: 13:43:43 on Jul 19,2023
+ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." lpf.vo 
+ModelSim-Altera Info: # -- Compiling module lpf
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	lpf
+ModelSim-Altera Info: # End time: 13:43:43 on Jul 19,2023, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.0/my_designs/lpf {C:/intelFPGA_lite/18.0/my_designs/lpf/testbench.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+ModelSim-Altera Info: # Start time: 13:43:43 on Jul 19,2023
+ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.0/my_designs/lpf" C:/intelFPGA_lite/18.0/my_designs/lpf/testbench.v 
+ModelSim-Altera Info: # -- Compiling module testbench
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	testbench
+ModelSim-Altera Info: # End time: 13:43:43 on Jul 19,2023, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs="+acc"  testbench
+ModelSim-Altera Info: # vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L altera_lnsim_ver -L cyclonev_ver -L lpm_ver -L sgate_ver -L cyclonev_hssi_ver -L altera_mf_ver -L cyclonev_pcie_hip_ver -L gate_work -L work -voptargs=""+acc"" testbench 
+ModelSim-Altera Info: # Start time: 13:43:44 on Jul 19,2023
+ModelSim-Altera Info: # Loading work.testbench
+ModelSim-Altera Info: # Loading work.lpf
+ModelSim-Altera Info: # Loading cyclonev_ver.cyclonev_io_obuf
+ModelSim-Altera Info: # Loading cyclonev_ver.cyclonev_io_ibuf
+ModelSim-Altera Info: # Loading cyclonev_ver.cyclonev_clkena
+ModelSim-Altera Info: # Loading cyclonev_ver.cyclonev_mac
+ModelSim-Altera Info: # Loading altera_ver.dffeas
+ModelSim-Altera Info: # Loading cyclonev_ver.cyclonev_lcell_comb
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2272): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4326).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'bx').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'bx').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'bx').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'bx').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'bx').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'bx').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'bx').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2272): Port type is incompatible with connection (port 'bx').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2272): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4329).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2272): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4330).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2272): [PCDPC] - Port size (16) does not match connection size (27) for port 'scanin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4332).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2272): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4333).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult2~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2355): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2355): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2355): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2355): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2355): [PCDPC] - Port size (16) does not match connection size (27) for port 'ay'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4325).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2355): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4326).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2355): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4329).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2355): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4330).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2355): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4333).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult6~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Info: # Loading altera_ver.PRIM_GDFF_LOW
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2475): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2475): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2475): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2475): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2475): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2475): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2475): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4326).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2475): [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4328).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2475): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4329).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2475): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4330).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2475): [PCDPC] - Port size (16) does not match connection size (27) for port 'scanin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4332).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2475): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4333).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult5~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2556): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2556): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2556): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2556): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2556): Port type is incompatible with connection (port 'ax').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2556): [PCDPC] - Port size (16) does not match connection size (27) for port 'ay'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4325).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2556): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4326).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2556): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4329).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2556): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4330).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2556): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4333).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult7~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2638): Port type is incompatible with connection (port 'ay').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2638): Port type is incompatible with connection (port 'ay').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2638): Port type is incompatible with connection (port 'ay').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2638): Port type is incompatible with connection (port 'ay').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2638): Port type is incompatible with connection (port 'ay').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2638): Port type is incompatible with connection (port 'ay').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2638): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4326).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2638): [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4328).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2638): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4329).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2638): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4330).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2638): [PCDPC] - Port size (17) does not match connection size (27) for port 'scanin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4332).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2638): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4333).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult3~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) <protected>(<protected>): [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Protected: /testbench/dut/\Mult3~8 /inst/<protected> File: nofile
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) <protected>(<protected>): [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Protected: /testbench/dut/\Mult3~8 /inst/<protected> File: nofile
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2716): Port type is incompatible with connection (port 'ay').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult1~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2716): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4326).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult1~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2716): [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4328).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult1~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2716): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4329).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult1~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2716): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4330).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult1~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2716): [PCDPC] - Port size (17) does not match connection size (27) for port 'scanin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4332).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult1~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2716): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4333).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult1~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) <protected>(<protected>): [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Protected: /testbench/dut/\Mult1~8 /inst/<protected> File: nofile
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) <protected>(<protected>): [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Protected: /testbench/dut/\Mult1~8 /inst/<protected> File: nofile
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2794): Port type is incompatible with connection (port 'ay').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2794): Port type is incompatible with connection (port 'ay').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2794): Port type is incompatible with connection (port 'ay').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3016) lpf.vo(2794): Port type is incompatible with connection (port 'ay').
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2794): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4326).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2794): [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4328).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2794): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4329).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2794): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4330).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2794): [PCDPC] - Port size (17) does not match connection size (27) for port 'scanin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4332).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) lpf.vo(2794): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v(4333).
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/\Mult0~8  File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) <protected>(<protected>): [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Protected: /testbench/dut/\Mult0~8 /inst/<protected> File: nofile
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) <protected>(<protected>): [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Protected: /testbench/dut/\Mult0~8 /inst/<protected> File: nofile
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # add wave *
+ModelSim-Altera Warning: # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+ModelSim-Altera Info: #           File in use by: Ellie  Hostname: DESKTOP-2JKGPNF  ProcessID: 21420
+ModelSim-Altera Info: #           Attempting to use alternate WLF file "./wlftjrtbwq".
+ModelSim-Altera Warning: # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+ModelSim-Altera Info: #           Using alternate file: ./wlftjrtbwq
+ModelSim-Altera Info: # view structure
+ModelSim-Altera Info: # .main_pane.structure.interior.cs.body.struct
+ModelSim-Altera Info: # view signals
+ModelSim-Altera Info: # .main_pane.objects.interior.cs.body.tree
+ModelSim-Altera Info: # run -all
+ModelSim-Altera Info: # Break key hit
+ModelSim-Altera Info: # Break in Module cyclonev_lcell_comb at /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v line 836
+ModelSim-Altera Info: # Error opening C:/build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v
+ModelSim-Altera Info: # Path name 'C:/build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/cyclonev_atoms.v' doesn't exist.
+ModelSim-Altera Info: # End time: 13:50:15 on Jul 19,2023, Elapsed time: 0:06:31
+ModelSim-Altera Info: # Errors: 1, Warnings: 89
+Info: NativeLink simulation flow was successful

@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.0/my_designs/lpf_3/simulation/qsim
+vlpf
+Z1 !s110 1690392768
+!i10b 1
+!s100 2zCD;cbgZE32]2jAW4?>?1
+IzCMaPEV`MC7b_?;XigP3L2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1690392764
+8lpf.vo
+Flpf.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1690392767.000000
+!s107 lpf.vo|
+!s90 -work|work|lpf.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vlpf_vlg_vec_tst
+R1
+!i10b 1
+!s100 <dNK12X?hHjVb1S6NO=NF1
+IXc5h[DjO?To8<>;V9zfdo1
+R2
+R0
+w1690392762
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1690392768.000000
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R4
+R5

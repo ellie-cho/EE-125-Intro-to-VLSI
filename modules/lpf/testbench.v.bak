@@ -1,0 +1,59 @@
+// testbench.v
+
+`timescale 1ns/100ps
+
+module testbench;
+
+// Parameters
+parameter integer N = 16;
+
+
+// Signals
+reg clk, reset, enable, reset_out, enable_out;
+reg [N-1:0] input_data, input_data_out;
+wire [N-1:0] filtered_output;
+
+
+// Instantiate DUT (Device Under Test)
+elliptic_filter dut(
+    .clk(clk),
+    .reset(reset),
+    .enable(enable),
+    .input_data(input_data),
+    .reset_out(reset_out),
+    .enable_out(enable_out),
+    .input_data_out(input_data_out),
+    .filtered_output(filtered_output),
+);
+
+// Clock generation
+initial
+begin
+    clk <= 1'b0;
+    reset <= 1'b0;
+    input_data <= 0;
+    enable <= 0;
+end
+
+
+always @(clk)
+    #(10) clk <= !clk;
+
+// Test stimulus
+initial begin
+    // Reset the DUT
+    #(100)
+    reset <= 1'b0;
+    enable <= 1;
+    input_data <= 0;
+    #(100)
+    reset <= 0;
+    enable <=1;
+    #(1000)
+    input_data <= 'hFFFF;
+    #100
+    input_data <= 0;
+
+end
+
+endmodule

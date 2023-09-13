@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ssd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "start_btn",
+					"strict" : false
+				},
+				{
+					"name" : "speed_btn",
+					"strict" : false
+				},
+				{
+					"name" : "dir_btn",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

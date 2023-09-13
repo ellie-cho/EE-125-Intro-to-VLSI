@@ -1,0 +1,197 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'speed_btn'
+Slack : -6.557
+TNS   : -24.464
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -6.493
+TNS   : -263.828
+
+Type  : Slow 1100mV 85C Model Setup 'dir_btn'
+Slack : -1.162
+TNS   : -1.162
+
+Type  : Slow 1100mV 85C Model Setup 'start_btn'
+Slack : -1.157
+TNS   : -1.157
+
+Type  : Slow 1100mV 85C Model Hold 'start_btn'
+Slack : 0.275
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dir_btn'
+Slack : 0.292
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'speed_btn'
+Slack : 1.423
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.538
+TNS   : -37.694
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'speed_btn'
+Slack : -0.538
+TNS   : -3.316
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'start_btn'
+Slack : -0.538
+TNS   : -0.964
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dir_btn'
+Slack : -0.538
+TNS   : -0.911
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -6.435
+TNS   : -261.608
+
+Type  : Slow 1100mV 0C Model Setup 'speed_btn'
+Slack : -6.192
+TNS   : -23.344
+
+Type  : Slow 1100mV 0C Model Setup 'dir_btn'
+Slack : -1.378
+TNS   : -1.378
+
+Type  : Slow 1100mV 0C Model Setup 'start_btn'
+Slack : -1.317
+TNS   : -1.317
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'start_btn'
+Slack : 0.427
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dir_btn'
+Slack : 0.501
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'speed_btn'
+Slack : 1.086
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.538
+TNS   : -38.386
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'speed_btn'
+Slack : -0.538
+TNS   : -3.212
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'start_btn'
+Slack : -0.538
+TNS   : -0.990
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dir_btn'
+Slack : -0.538
+TNS   : -0.950
+
+Type  : Fast 1100mV 85C Model Setup 'speed_btn'
+Slack : -3.955
+TNS   : -14.723
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -2.665
+TNS   : -104.417
+
+Type  : Fast 1100mV 85C Model Setup 'start_btn'
+Slack : -0.601
+TNS   : -0.601
+
+Type  : Fast 1100mV 85C Model Setup 'dir_btn'
+Slack : -0.586
+TNS   : -0.586
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : -0.047
+TNS   : -0.047
+
+Type  : Fast 1100mV 85C Model Hold 'start_btn'
+Slack : 0.332
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dir_btn'
+Slack : 0.342
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'speed_btn'
+Slack : 1.202
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'start_btn'
+Slack : -0.417
+TNS   : -0.485
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dir_btn'
+Slack : -0.394
+TNS   : -0.439
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'speed_btn'
+Slack : -0.278
+TNS   : -1.195
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.097
+TNS   : -4.628
+
+Type  : Fast 1100mV 0C Model Setup 'speed_btn'
+Slack : -3.270
+TNS   : -12.128
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -2.352
+TNS   : -91.689
+
+Type  : Fast 1100mV 0C Model Setup 'dir_btn'
+Slack : -0.542
+TNS   : -0.542
+
+Type  : Fast 1100mV 0C Model Setup 'start_btn'
+Slack : -0.533
+TNS   : -0.533
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : -0.137
+TNS   : -0.188
+
+Type  : Fast 1100mV 0C Model Hold 'start_btn'
+Slack : 0.317
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dir_btn'
+Slack : 0.342
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'speed_btn'
+Slack : 0.858
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'start_btn'
+Slack : -0.410
+TNS   : -0.480
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dir_btn'
+Slack : -0.395
+TNS   : -0.450
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'speed_btn'
+Slack : -0.263
+TNS   : -1.118
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.098
+TNS   : -4.694
+
+------------------------------------------------------------

@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -4.870
+TNS   : -136.788
+
+Type  : Slow 1100mV 85C Model Setup 'write_clear'
+Slack : -3.904
+TNS   : -54.556
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.221
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'write_clear'
+Slack : 2.150
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.538
+TNS   : -38.912
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'write_clear'
+Slack : -0.538
+TNS   : -12.722
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -5.053
+TNS   : -134.280
+
+Type  : Slow 1100mV 0C Model Setup 'write_clear'
+Slack : -3.909
+TNS   : -55.153
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'write_clear'
+Slack : 2.263
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.538
+TNS   : -40.379
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'write_clear'
+Slack : -0.538
+TNS   : -12.570
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -2.785
+TNS   : -48.478
+
+Type  : Fast 1100mV 85C Model Setup 'write_clear'
+Slack : -2.278
+TNS   : -32.674
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.140
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'write_clear'
+Slack : 1.688
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.396
+TNS   : -4.278
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'write_clear'
+Slack : 0.080
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -2.340
+TNS   : -40.574
+
+Type  : Fast 1100mV 0C Model Setup 'write_clear'
+Slack : -2.237
+TNS   : -32.414
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'write_clear'
+Slack : 1.726
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.392
+TNS   : -4.791
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'write_clear'
+Slack : 0.099
+TNS   : 0.000
+
+------------------------------------------------------------

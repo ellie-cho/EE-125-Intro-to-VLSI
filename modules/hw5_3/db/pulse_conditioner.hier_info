@@ -1,0 +1,8 @@
+|pulse_conditioner
+clk => q2.CLK
+clk => q1.CLK
+clk => q0.CLK
+pulse_in => q0.DATAIN
+pulse_out <= pulse_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

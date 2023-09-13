@@ -1,0 +1,105 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Hsync",
+					"strict" : false
+				},
+				{
+					"name" : "Vsync",
+					"strict" : false
+				},
+				{
+					"name" : "R[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R[3]",
+					"strict" : false
+				},
+				{
+					"name" : "G[0]",
+					"strict" : false
+				},
+				{
+					"name" : "G[1]",
+					"strict" : false
+				},
+				{
+					"name" : "G[2]",
+					"strict" : false
+				},
+				{
+					"name" : "G[3]",
+					"strict" : false
+				},
+				{
+					"name" : "led0",
+					"strict" : false
+				},
+				{
+					"name" : "led1",
+					"strict" : false
+				},
+				{
+					"name" : "temp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "temp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "temp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "temp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "temp[4]",
+					"strict" : false
+				},
+				{
+					"name" : "temp[5]",
+					"strict" : false
+				},
+				{
+					"name" : "temp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "temp[7]",
+					"strict" : false
+				},
+				{
+					"name" : "temp[8]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[1]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

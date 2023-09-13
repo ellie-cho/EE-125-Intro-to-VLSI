@@ -1,0 +1,9 @@
+module phase_accumulator(clk, rst, freq, FCW);
+	output reg FCW;
+      output phase;
+	input clk;
+	input rst;
+	input  freq[11:0];  //this should store the desired frequency of the output signal
+	localparam BITS  = 12; 
+	localparam F_CLK = 50_000_000;
+	FCW <= freq * 2**BITS / F_CLK;

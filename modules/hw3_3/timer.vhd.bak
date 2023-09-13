@@ -1,0 +1,58 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+
+
+entity clock_divider is
+  generic (
+	F_CLK_IN: natural := 50;  -- MHz
+	T_CLK_SLOW: natural := 400 -- ns
+  );
+  port (
+    clk_in, rst: in std_logic; 
+	 
+	 
+	 
+    clk_slow: out std_logic
+  );
+end entity clock_divider;
+
+architecture slow_clock_generator of clock_divider is
+	constant CLK_DIVIDER: natural := F_CLK_IN*T_CLK_SLOW/1000;
+	signal clk_slow_internal: std_logic;
+begin
+	process (clk_in, rst)
+		variable count: natural range 0 to CLK_DIVIDER-1 := 0;
+	begin
+		if rst then
+			count := 0;
+			clk_slow_internal <= '0';
+			
+		elsif rising_edge(clk_in) then
+		
+			
+			if count < ((CLK_DIVIDER)/2) then
+				clk_slow_internal <= '0';
+			else
+				clk_slow_internal <= '1';
+			end if;
+
+			if count = 0 then
+				count := count + 1;
+			else
+				if count < CLK_DIVIDER-1 then
+					count := count + 1;
+				else 
+					count := 0;
+				end if;
+			end if;
+			
+			
+		end if;
+
+		clk_slow <= clk_slow_internal;
+	end process;
+	
+end architecture;

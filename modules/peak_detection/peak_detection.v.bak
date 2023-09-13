@@ -1,0 +1,97 @@
+module peak_detection #(
+    parameter DATA_IN_BITS = 16,
+    parameter LEN = 2 // # of data points to look at at a time 
+) (
+    input wire [DATA_IN_BITS-1 : 0] input_data,
+    input wire clk, 
+    input wire reset,
+    output wire state,
+    output wire [DATA_IN_BITS-1 : 0] output_data 
+);
+
+
+localparam [1:0] // 3 states for Moore state machine
+    increasing = 2'b00,
+    peak = 2'b01, 
+    decreasing = 2'b10;
+
+integer i; // to be used in for loops
+
+// Internal signals
+reg [DATA_IN_BITS-1 : 0] input_reg [0:LEN];
+reg [1:0] stateMoore_reg, stateMoore_next;
+reg [DATA_IN_BITS-1 : 0] output_reg;
+reg comp;
+
+assign output_data = output_reg;
+assign state = stateMoore_reg;
+
+
+
+initial begin
+    
+    for (i = 0; i < LEN; i = i + 1) begin
+        input_reg[i] = 0;
+        output_reg[i] = 0;
+    end
+    stateMoore_reg = 2'b10;
+    stateMoore_next = 2'b10;
+end
+always @(posedge clk, posedge reset)
+begin
+    if(reset) // go to state "decreasing" if reset
+        begin
+        stateMoore_reg <= decreasing;
+        end
+    else // otherwise update the states
+        begin
+        stateMoore_reg <= stateMoore_next;
+        end
+end
+
+always @(posedge clk, posedge reset)
+begin
+    if (reset) begin
+        for (i = 0; i < LEN; i = i + 1) begin
+        input_reg[i] = 0;
+        output_reg = 0;
+        end
+    end
+    else begin
+        // store current state as next
+        stateMoore_next = stateMoore_reg; // required: when no case statement is satisfied
+        for (i = 1; i < LEN; i = i + 1) begin
+            input_reg[i] = input_reg[i-1];
+        end
+        input_reg[0] = input_data;
+
+        if (input_reg[0] > input_reg[1])
+            comp = 1;
+        else comp = 0;
+
+        case(stateMoore_reg)
+        increasing: // if state is increasing,
+            begin
+            output_reg = 0;
+            if(~comp) // and comp is 0
+                stateMoore_next = peak; // then go to state peak
+            end
+        peak:
+            begin
+                output_reg = input_reg[1];
+                if(comp) // if comp is 1
+                    stateMoore_next = increasing; // go to state increasing
+                else    
+                    stateMoore_next = decreasing; // else go to state decreasing
+            end
+        decreasing: 
+            begin
+            output_reg = 0;
+            if(comp) //if comp is 1
+                stateMoore_next = increasing; // then go to state increasing 
+            end
+        endcase        
+    end
+end
+
+endmodule

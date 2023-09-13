@@ -1,0 +1,46 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity double_trigger_one_shot is
+    port (
+        clk      : in  std_logic;
+        x1  : in  std_logic;
+        x2    : in  std_logic;
+        y : out std_logic
+    );
+end entity double_trigger_one_shot;
+
+architecture Behavioral of double_trigger_one_shot is
+    signal state : integer range 0 to 2 := 0;
+	 
+begin
+    process (clk, reset)
+    begin
+        if rising_edge(clk) then
+            case state is
+                when 0 =>
+                    if x2 = '1' then
+                        state <= 1;
+								y <= '0';
+                    end if;
+                when 1 =>
+							if x2 = '0' then
+								state <= 0;
+								y <= '0';
+							elsif x1 = '1' then
+								state <= two
+								y <= '0';
+							end if;
+                when 2 =>
+                    if x2 = '0' then
+                        state <= 0;
+						  elsif x1 = '0' then 
+								y <= '1';
+								state <= 0;
+                    end if;
+            end case;
+        end if;
+    end process;
+
+end architecture Behavioral;

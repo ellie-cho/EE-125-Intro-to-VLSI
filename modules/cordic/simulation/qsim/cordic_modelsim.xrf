@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/intelFPGA_lite/18.0/my_designs/cordic/cordic.v
+source_file = 1, C:/intelFPGA_lite/18.0/my_designs/cordic/db/cordic.cbx.xml
+design_name = cordic
+instance = comp, \phase[0]~output , phase[0]~output, cordic, 1
+instance = comp, \phase[1]~output , phase[1]~output, cordic, 1
+instance = comp, \phase[2]~output , phase[2]~output, cordic, 1
+instance = comp, \clk~input , clk~input, cordic, 1
+instance = comp, \clk~inputCLKENA0 , clk~inputCLKENA0, cordic, 1
+instance = comp, \rstn~input , rstn~input, cordic, 1
+instance = comp, \phase~0 , phase~0, cordic, 1
+instance = comp, \phase[0]~reg0 , phase[0]~reg0, cordic, 1
+instance = comp, \phase~1 , phase~1, cordic, 1
+instance = comp, \phase[1]~reg0 , phase[1]~reg0, cordic, 1
+instance = comp, \phase~2 , phase~2, cordic, 1
+instance = comp, \phase[2]~reg0 , phase[2]~reg0, cordic, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, cordic, 1

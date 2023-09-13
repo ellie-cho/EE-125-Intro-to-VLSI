@@ -1,0 +1,245 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk_vga'
+Slack : -4.674
+TNS   : -70.921
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -4.576
+TNS   : -274.501
+
+Type  : Slow 1100mV 85C Model Setup 'Hsyn'
+Slack : -3.771
+TNS   : -70.895
+
+Type  : Slow 1100mV 85C Model Setup 'clk_green'
+Slack : -2.142
+TNS   : -20.960
+
+Type  : Slow 1100mV 85C Model Setup 'clk_red'
+Slack : -2.054
+TNS   : -25.460
+
+Type  : Slow 1100mV 85C Model Hold 'clk_vga'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.435
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clk_red'
+Slack : 0.797
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clk_green'
+Slack : 0.805
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'Hsyn'
+Slack : 0.906
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_red'
+Slack : -0.662
+TNS   : -16.754
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.538
+TNS   : -50.412
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Hsyn'
+Slack : -0.538
+TNS   : -20.911
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_vga'
+Slack : -0.538
+TNS   : -20.241
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_green'
+Slack : -0.538
+TNS   : -11.030
+
+Type  : Slow 1100mV 0C Model Setup 'clk_vga'
+Slack : -4.841
+TNS   : -73.687
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -4.590
+TNS   : -273.266
+
+Type  : Slow 1100mV 0C Model Setup 'Hsyn'
+Slack : -4.017
+TNS   : -74.003
+
+Type  : Slow 1100mV 0C Model Setup 'clk_green'
+Slack : -2.318
+TNS   : -22.135
+
+Type  : Slow 1100mV 0C Model Setup 'clk_red'
+Slack : -2.210
+TNS   : -26.753
+
+Type  : Slow 1100mV 0C Model Hold 'clk_vga'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.443
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clk_red'
+Slack : 0.797
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clk_green'
+Slack : 0.807
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'Hsyn'
+Slack : 0.885
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_red'
+Slack : -0.684
+TNS   : -17.048
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.538
+TNS   : -51.619
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Hsyn'
+Slack : -0.538
+TNS   : -20.795
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_vga'
+Slack : -0.538
+TNS   : -20.192
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_green'
+Slack : -0.538
+TNS   : -11.326
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -2.408
+TNS   : -107.569
+
+Type  : Fast 1100mV 85C Model Setup 'clk_vga'
+Slack : -1.871
+TNS   : -23.643
+
+Type  : Fast 1100mV 85C Model Setup 'Hsyn'
+Slack : -1.384
+TNS   : -24.894
+
+Type  : Fast 1100mV 85C Model Setup 'clk_green'
+Slack : -0.626
+TNS   : -6.103
+
+Type  : Fast 1100mV 85C Model Setup 'clk_red'
+Slack : -0.601
+TNS   : -7.723
+
+Type  : Fast 1100mV 85C Model Hold 'clk_vga'
+Slack : -0.034
+TNS   : -0.034
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.198
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clk_red'
+Slack : 0.343
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clk_green'
+Slack : 0.352
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Hsyn'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.469
+TNS   : -7.055
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_red'
+Slack : -0.277
+TNS   : -3.863
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_green'
+Slack : -0.114
+TNS   : -1.246
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Hsyn'
+Slack : -0.023
+TNS   : -0.238
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_vga'
+Slack : 0.117
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -2.043
+TNS   : -95.040
+
+Type  : Fast 1100mV 0C Model Setup 'clk_vga'
+Slack : -1.708
+TNS   : -21.425
+
+Type  : Fast 1100mV 0C Model Setup 'Hsyn'
+Slack : -1.261
+TNS   : -22.485
+
+Type  : Fast 1100mV 0C Model Setup 'clk_green'
+Slack : -0.580
+TNS   : -5.634
+
+Type  : Fast 1100mV 0C Model Setup 'clk_red'
+Slack : -0.557
+TNS   : -6.865
+
+Type  : Fast 1100mV 0C Model Hold 'clk_vga'
+Slack : -0.036
+TNS   : -0.036
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clk_red'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clk_green'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Hsyn'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.455
+TNS   : -7.133
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_red'
+Slack : -0.200
+TNS   : -2.785
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_green'
+Slack : -0.081
+TNS   : -0.883
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Hsyn'
+Slack : 0.004
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_vga'
+Slack : 0.126
+TNS   : 0.000
+
+------------------------------------------------------------
